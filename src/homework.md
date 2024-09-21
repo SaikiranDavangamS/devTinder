@@ -23,3 +23,9 @@
 - Reading the query params in the routes
 - Reading the dynamic routes in the routes
 - Difference between use and all in routes
+- Multiple route Handlers - Play with the code
+- next()
+- next function and errors along with res.send()
+- app.use("/route",rH,[rH2,rH3],rH4,rH5)
+- What is a Middleware
+- How express Js bascially handles requests behind the scenes
