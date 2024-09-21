@@ -29,3 +29,5 @@
 - app.use("/route",rH,[rH2,rH3],rH4,rH5)
 - What is a Middleware
 - How express Js bascially handles requests behind the scenes
+- Write a dummy auth middleware for admin
+- Write a dummy auth middleware for all user

@@ -1,28 +1,28 @@
 const express = require('express');
 
+const {adminAuth,userAuth} =  require('./middlewares/auth');
+
 const app = express();
 
-// GET /users => it checks all the app.xxx("watching route") functions 
-
-app.use("/",(req,res,next) => {
-    // res.send("Handling / route")
-    next()
+app.use("/admin",adminAuth)
+app.get("/user",userAuth,(req,res) => {
+    res.send("user Data Sent")
+})
+app.get("/user/login",(req,res) => {
+    res.send("user logged in successfully")
 })
 
-app.get("/user",(req,res)=> {
-    console.log("Handling / user route") 
-    next();
-},(req,res,next) => {
-    next()
+app.get("/admin/user",(req,res) => {
+    res.send("user Data Sent")
+})
+app.get("/admin/getAllData",(req,res) => {
+    res.send("All Data Sent")
 })
 
-app.use("/user",(req,res,next) => {
-    // route handler
-    // res.send("Route handler 1"
-    next()
-},(req,res,next) => {
-    res.send("2nd Route handler")
+app.get("/admin/deleteUser",(req,res) => {
+    res.send("Deleted a user")
 })
+
 
 
 
