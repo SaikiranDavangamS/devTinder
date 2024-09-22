@@ -31,3 +31,13 @@
 - How express Js bascially handles requests behind the scenes
 - Write a dummy auth middleware for admin
 - Write a dummy auth middleware for all user
+- Error handling using app.use("/",(err,req,res,next)=> {})
+
+- Create a free cluster on MongoDB official website(Mongo atlas)
+- Install mongoose library
+- Connect your application to the Database "Connection-url"/devTinder
+- Call the connnectDB function and connect to database before starting application on 7777
+- Create a userSchema & user Model
+- Create / singup API to add data to database
+- Push some documents using API calls from postman
+- Error Handling using try,catch and finally
