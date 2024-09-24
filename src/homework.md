@@ -41,3 +41,6 @@
 - Create / singup API to add data to database
 - Push some documents using API calls from postman
 - Error Handling using try,catch and finally
+
+- Js Object and json objects
+-  Make your signup API dynamic to recieve data from the end user
